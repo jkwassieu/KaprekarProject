@@ -15,7 +15,7 @@
  *   20 + 25 = 45. 
  * 
  * <p>See Wikipedia's  
- * <a href="https://en.wikipedia.org/wiki/Kaprekar_number">Kaprekar Number</a>
+ * <a href="https://en.wikipedia.org/wiki/ccKaprekar_number">Kaprekar Number</a>
  * article for more information.</p>
  * 
  * @param n
@@ -31,7 +31,7 @@ int isKaprekar(int n) {
   int i;
   long square = n * (long) n;
   int numDigits = (int) log(n) + 1;
-  long modulus = 0;
+  long modulus =1;
   long first, second;
 
   //for each possible "split" of the square...
